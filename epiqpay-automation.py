@@ -3,7 +3,7 @@ import requests, time, string, random, socket, struct
 proxyList = []
 
 def loadProxies():
-    proxies = open("proxies-dc-only.txt").read().splitlines()
+    proxies = open("proxies.txt").read().splitlines()
     for proxy in proxies:
         try:
             if len(proxy.split(":")) == 2:
